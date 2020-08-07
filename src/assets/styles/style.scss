@@ -1,0 +1,65 @@
+@import '~bootstrap/scss/bootstrap';
+
+
+* {
+    transition: all .5s ease-in-out;
+}
+
+html,
+body,
+.container {
+    @extend .bg-light;
+}
+
+html {
+    height: 100%;
+}
+
+body,
+.container {
+    min-height: 100vh;
+}
+
+.container {
+    @extend .bg-white;
+    @extend .border-left;
+    @extend .border-right;
+}
+
+li {
+    @extend .border;
+    @extend .border-danger;
+    @extend .my-1;
+
+    &.checked {
+        @extend .border-success;
+    }
+}
+
+
+body.dark {
+    @extend .bg-secondary;
+
+    .container {
+        @extend .bg-dark;
+        @extend .text-light;
+    }
+
+    .navbar-brand,
+    .btn,
+    .list-group-item,
+    input {
+        @extend .text-white;
+    }
+
+    input,
+    .list-group-item {
+        @extend .bg-secondary;
+        @extend .text-white;
+    }
+
+    .list-group-item:hover {
+        @extend .bg-light;
+        @extend .text-dark;
+    }
+}

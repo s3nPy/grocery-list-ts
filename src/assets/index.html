@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List</title>
+</head>
+<body>
+    
+    <div class="container">
+        <nav class="navbar navbar-light border-bottom sticky-top px-0 justify-content-between mb-4">
+            <span class="navbar-brand">Grocery list</span>
+            <span class="form-inline">
+                <button class="btn btn-outline-danger mr-2" id="clear-button">Clear list</button>
+                <button class="btn btn-outline-info" id="theme-button">Change theme</button>
+            </span>
+        </nav>
+
+        <div class="input-group mb-3">
+            <input 
+                type="text"
+                class="form-control" 
+                placeholder="What do you need to buy ?" 
+                aria-label="What do you need to buy ?" 
+                aria-describedby="button-addon2"
+                id="input-field"
+            >
+            <div class="input-group-append">
+                <button 
+                    class="btn btn-outline-secondary" 
+                    type="button" 
+                    id="add-button"
+                >
+                    Add
+                </button>
+            </div>
+        </div>
+
+        <ul class="list-group border-top font-weight-light" id="grocery-list">
+            <p class="mx-auto" id="empty-list" hidden>Grocery list is empty</p>
+            
+            <!-- <li class="list-group-item list-group-item-action">Morbi leo risus</li> -->
+        </ul>
+    </div>
+
+</body>
+</html>
